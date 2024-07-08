@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lab3.lab3bai2">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab 4"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="#152999"
+        android:padding="10dp"
+        />
+        <GridView
+            android:id="@+id/lst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#121211"
+            android:background="#EFA7BF"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:padding="10dp"
+            />
+
+</LinearLayout>

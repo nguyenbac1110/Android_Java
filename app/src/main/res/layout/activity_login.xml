@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lab1.Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome back!"
+            android:textColor="#9C27B0"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#3F51B5"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="10dp"
+        android:hint="Tài khoản"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/shape_"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/shape_"
+        android:textColorHint="@color/black" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Switch
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:minHeight="48sp"
+
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remmember account"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Forgot password?"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:text="Log in"
+        android:backgroundTint="#425DF4"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_color_svgrepo_com"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_google"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_linkedin"
+            />
+    </LinearLayout>
+</LinearLayout>

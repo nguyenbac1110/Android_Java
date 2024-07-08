@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="50dp"
+    android:layout_marginLeft="50dp"
+    tools:context=".lab2.lab2bai1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký thông tin sinh viên"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtMaSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sinh viên"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTenSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sinh viên"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới tính:"
+        android:layout_marginBottom="4dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGioiTinh"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioBtnNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioBtnNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Môn học:"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkboxToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toán"/>
+
+        <CheckBox
+            android:id="@+id/checkboxLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lý"/>
+
+        <CheckBox
+            android:id="@+id/checkboxHoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hóa"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        />
+
+
+</LinearLayout>

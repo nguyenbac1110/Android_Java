@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Baitap</string>
+    <string-array name="table_array">
+        <item>Bàn 1</item>
+        <item>Bàn 2</item>
+        <item>Bàn 3</item>
+        <item>Bàn 4</item>
+        <item>Bàn 5</item>
+    </string-array>
+</resources>

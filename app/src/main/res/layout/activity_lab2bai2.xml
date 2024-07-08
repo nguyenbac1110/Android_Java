@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NHẬP THÔNG TIN SẢN PHẨM"
+        android:textSize="24sp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:textColor="#085C9E"
+            android:layout_marginRight="70sp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edtMa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã"
+            android:background="@drawable/shape_"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#085C9E"
+            android:layout_marginRight="35sp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edtTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_"
+            android:hint="Nhập tên" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="#085C9E"
+            android:layout_marginRight="40sp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edtGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_"
+            android:hint="Nhập giá" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sologan"
+            android:textColor="#085C9E"
+            android:layout_marginRight="20sp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edtSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_"
+            android:hint="Nhập slogan" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:textColor="#085C9E"
+            android:layout_marginRight="60sp"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_"
+            android:hint="Nhập đơn vị" />
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnDang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDDB240C"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Đăng" />
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Baitap"
+        tools:targetApi="31">
+        <activity
+            android:name=".lab5.lab6"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".lab4.lab4_food" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".lab3.lab3bai2" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".lab3.lab3bai1" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".lab2.lab2bai2hienthi"
+            android:exported="false" />
+        <activity
+            android:name=".lab2.lab2bai3hienthi"
+            android:exported="false" />
+        <activity
+            android:name=".lab2.lab2bai3"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".lab2.lab2bai2"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".lab2.lab2bai1"
+            android:exported="false" />
+        <activity
+            android:name=".lab1.Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lab1.Login"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".lab4.lab4_food"-->
+<!--            android:exported="true">-->
+            <activity
+                android:name=".lab2.lab2bai2"
+                android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
