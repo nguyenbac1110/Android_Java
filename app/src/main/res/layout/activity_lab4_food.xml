@@ -6,6 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:longClickable="true"
     tools:context=".lab3.lab3bai2">
 
 
@@ -30,6 +33,7 @@
             android:verticalSpacing="10dp"
             android:stretchMode="columnWidth"
             android:padding="10dp"
+            android:descendantFocusability="blocksDescendants"
             />
 
 </LinearLayout>

@@ -1,12 +1,18 @@
 package com.example.baitap.lab4;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -38,10 +44,29 @@ public class lab4_food extends AppCompatActivity {
         list_.add(new Food(R.drawable.soup_ga,"Soup gà",1000000));
         list_.add(new Food(R.drawable.chao_ech,"Cháo ếch",1000000));
 
+        registerForContextMenu(lst);
 
         FoodAdapter adapter = new FoodAdapter(this, list_);
         lst.setAdapter(adapter);
 
+    }
 
+
+        @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.ban_menu,menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+        int position = info.position;
+        Food food = list_.get(position);
+        String foodName = food.getTen();
+
+        String tableTitle = item.getTitle().toString();
+
+        Toast.makeText(this, tableTitle + " chọn đặt tên món ăn " + foodName, Toast.LENGTH_SHORT).show();
+        return super.onContextItemSelected(item);
     }
 }

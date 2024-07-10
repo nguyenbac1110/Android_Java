@@ -49,6 +49,8 @@ public class FoodAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater infl = ((Activity) context).getLayoutInflater();
         view = infl.inflate(R.layout.itemlab4, viewGroup, false);
+
+        view.setLongClickable(true);
         ImageView imghinh = view.findViewById(R.id.imghinh);
         TextView txtten = view.findViewById(R.id.txtcon);
         EditText txtgia = view.findViewById(R.id.txtgia);
@@ -56,33 +58,33 @@ public class FoodAdapter extends BaseAdapter {
         txtten.setText(list.get(i).getTen());
         txtgia.setHint(String.valueOf(list.get(i).getGia()));
 
-        Spinner spinnerTable = view.findViewById(R.id.spinner_table);
-        ArrayAdapter<CharSequence> tableAdapter = ArrayAdapter.createFromResource(context, R.array.table_array, android.R.layout.simple_spinner_item);
+//        Spinner spinnerTable = view.findViewById(R.id.spinner_table);
+//        ArrayAdapter<CharSequence> tableAdapter = ArrayAdapter.createFromResource(context, R.array.table_array, android.R.layout.simple_spinner_item);
+//
+//        tableAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinnerTable.setAdapter(tableAdapter);
+//        spinnerTable.setVisibility(View.INVISIBLE);
 
-        tableAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerTable.setAdapter(tableAdapter);
-        spinnerTable.setVisibility(View.INVISIBLE);
-
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                spinnerTable.setVisibility(View.VISIBLE);
-                spinnerTable.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        String tableName = parent.getItemAtPosition(position).toString();
-                        String foodName = list.get(i).getTen();
-                        Toast.makeText(context, "Bàn số " + tableName + " chọn đặt tên món ăn " + foodName, Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {
-                        Toast.makeText(context, "Nothing", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        });
-        return view;
+//        view.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                spinnerTable.setVisibility(View.VISIBLE);
+//                spinnerTable.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//                    @Override
+//                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                        String tableName = parent.getItemAtPosition(position).toString();
+//                        String foodName = list.get(i).getTen();
+//                        Toast.makeText(context, "Bàn số " + tableName + " chọn đặt tên món ăn " + foodName, Toast.LENGTH_SHORT).show();
+//                    }
+//
+//                    @Override
+//                    public void onNothingSelected(AdapterView<?> parent) {
+//                        Toast.makeText(context, "Nothing", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//            }
+//        });
+       return view;
 
     }
 }
