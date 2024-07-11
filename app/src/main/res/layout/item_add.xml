@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="ADD SINH VIÊN"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Mã sinh viên"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="@drawable/custom"
+        />
+
+    <EditText
+        android:id="@+id/txtten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Tên sinh viên"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="@drawable/custom"
+        />
+
+    <EditText
+        android:id="@+id/txtlop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Lớp"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="@drawable/custom"
+        />
+
+    <EditText
+        android:id="@+id/txtgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Giới tính"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="@drawable/custom"
+        />
+
+    <ImageView
+        android:id="@+id/imghinh"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        />
+    <Button
+        android:id="@+id/btnChonHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:text="Chọn Ảnh"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CDDC39"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

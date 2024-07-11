@@ -12,16 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Baitap"
         tools:targetApi="31">
-
-         <activity
-         android:name=".lab4.lab4_food"
-         android:exported="false" />
-         <activity
-         android:name=".lab3.lab3bai2"
-         android:exported="false" />
-         <activity
-         android:name=".lab3.lab3bai1"
-         android:exported="false" />
+        <activity
+            android:name=".qlsv.MainSinhVien"
+            android:exported="false" />
+        <activity
+            android:name=".lab4.lab4_food"
+            android:exported="false" />
+        <activity
+            android:name=".lab3.lab3bai2"
+            android:exported="false" />
+        <activity
+            android:name=".lab3.lab3bai1"
+            android:exported="false" />
         <activity
             android:name=".lab2.lab2bai2hienthi"
             android:exported="false" />
@@ -46,11 +48,9 @@
         <activity
             android:name=".lab1.Login"
             android:exported="false" />
-
-
-            <activity
-                android:name=".MainActivity"
-                android:exported="true" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
