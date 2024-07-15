@@ -5,88 +5,87 @@
     android:layout_margin="20dp"
     android:orientation="vertical">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="ADD SINH VIÊN"
+        android:layout_marginTop="50dp"
+        android:text="THÊM SINH VIÊN"
         android:textColor="#2196F3"
         android:textSize="30sp"
         android:textStyle="bold" />
-
+    >
     <EditText
-        android:id="@+id/txtma"
+        android:id="@+id/txtmasv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Mã sinh viên"
-        android:textSize="22sp"
-        android:padding="10dp"
         android:background="@drawable/custom"
-        />
+        android:hint="Nhập manv"
+        android:textSize="22sp" />
 
     <EditText
-        android:id="@+id/txtten"
+        android:id="@+id/txthoten"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Tên sinh viên"
-        android:textSize="22sp"
-        android:padding="10dp"
         android:background="@drawable/custom"
-        />
-
+        android:hint="Nhập tên sinh viên"
+        android:textSize="22sp" />
     <EditText
-        android:id="@+id/txtlop"
+        android:id="@+id/txttenanh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Lớp"
-        android:textSize="22sp"
-        android:padding="10dp"
         android:background="@drawable/custom"
-        />
-
-    <EditText
-        android:id="@+id/txtgt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Giới tính"
-        android:textSize="22sp"
-        android:padding="10dp"
-        android:background="@drawable/custom"
-        />
-
-    <ImageView
-        android:id="@+id/imghinh"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:scaleType="fitXY"
-        />
-    <Button
-        android:id="@+id/btnChonHinh"
+        android:hint="Nhập tên ảnh"
+        android:textSize="22sp" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#FF5722"
-        android:text="Chọn Ảnh"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:layout_margin="5dp"
+        android:text="Giới tính:"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/rgGioiTinh_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <RadioButton
+            android:id="@+id/rbNam_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rbNu_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
 
     <Button
-        android:id="@+id/btnedit"
+        android:id="@+id/btnthem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:backgroundTint="#CDDC39"
-        android:text="UPDATE"
+        android:text="THÊM"
         android:textColor="@color/white"
-        android:textSize="22sp" />
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/btnhuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CDDC39"
+        android:text="Hủy"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
 
 </LinearLayout>

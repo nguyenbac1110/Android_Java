@@ -100,4 +100,14 @@
         android:textStyle="bold"
         android:textColor="@color/white"
         />
+    <Button
+        android:id="@+id/btnbaiqlsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QLSV"
+        android:backgroundTint="#FF9800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
 </LinearLayout>

@@ -15,6 +15,9 @@
         <activity
             android:name=".qlsv.MainSinhVien"
             android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".qlsv.MainSinhVien" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".lab4.lab4_food"
             android:exported="false" />
