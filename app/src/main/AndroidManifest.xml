@@ -13,9 +13,20 @@
         android:theme="@style/Theme.Baitap"
         tools:targetApi="31">
         <activity
-            android:name=".qlsv.MainSinhVien"
+            android:name=".bottomnavigation.BottomNav"
             android:exported="false" />
-        <!-- <activity -->
+        <activity
+            android:name=".navigation.MainNavi"
+            android:exported="false" />
+        <activity
+            android:name=".qlsv_all.MainSV"
+            android:exported="false" />
+        <activity
+            android:name=".example_json.MainJson"
+            android:exported="false" />
+        <activity
+            android:name=".qlsv.MainSinhVien"
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".qlsv.MainSinhVien" -->
         <!-- android:exported="false" /> -->
         <activity

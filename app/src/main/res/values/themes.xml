@@ -7,7 +7,7 @@
 
     <style name="Theme.Baitap" parent="Base.Theme.Baitap" />
         <!-- Base application theme. -->
-        <style name="Theme.ButtonColorChangeApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <style name="Theme.ButtonColorChangeApp" parent="Theme.Material3.DayNight.NoActionBar">
             <!-- Primary brand color. -->
             <item name="colorPrimary">@color/purple_500</item>
             <item name="colorPrimaryVariant">@color/purple_700</item>

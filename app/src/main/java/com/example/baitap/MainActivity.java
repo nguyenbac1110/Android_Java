@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.baitap.bottomnavigation.BottomNav;
+import com.example.baitap.example_json.MainJson;
 import com.example.baitap.lab1.Calculator;
 import com.example.baitap.lab1.Login;
 import com.example.baitap.lab1.Signup;
@@ -20,7 +22,9 @@ import com.example.baitap.lab2.lab2bai3;
 import com.example.baitap.lab3.lab3bai1;
 import com.example.baitap.lab3.lab3bai2;
 import com.example.baitap.lab4.lab4_food;
+import com.example.baitap.navigation.MainNavi;
 import com.example.baitap.qlsv.MainSinhVien;
+import com.example.baitap.qlsv_all.MainSV;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnbai1_1;
@@ -33,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnbai3_2;
     private Button btnbai4;
     private Button btnbaiqlsv;
+    private Button btnjson;
+    private Button btnsv;
+    private Button Nav;
+    private Button btnBottom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
         btnbai3_2 = findViewById(R.id.btnbai3_2);
         btnbai4 = findViewById(R.id.btnbai4);
         btnbaiqlsv = findViewById(R.id.btnbaiqlsv);
+        btnjson = findViewById(R.id.btnjson);
+        btnsv = findViewById(R.id.btnsv);
+        Nav = findViewById(R.id.btnNav);
+        btnBottom = findViewById(R.id.btnBottom);
         btnbai1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,6 +132,34 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MainSinhVien.class);
+                startActivity(intent);
+            }
+        });
+        btnjson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainJson.class);
+                startActivity(intent);
+            }
+        });
+        btnsv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainSV.class);
+                startActivity(intent);
+            }
+        });
+        Nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainNavi.class);
+                startActivity(intent);
+            }
+        });
+        btnBottom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BottomNav.class);
                 startActivity(intent);
             }
         });
