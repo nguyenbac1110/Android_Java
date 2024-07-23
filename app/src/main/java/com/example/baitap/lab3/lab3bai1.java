@@ -17,7 +17,7 @@ import com.example.baitap.lab3.model_.App;
 import java.util.ArrayList;
 
 public class lab3bai1 extends AppCompatActivity {
-    private ArrayList<App> list = new ArrayList<>();
+     ArrayList<App> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

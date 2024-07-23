@@ -30,10 +30,9 @@ import com.example.baitap.lab4.model_.Food;
 import java.util.ArrayList;
 
 public class MainSinhVien extends AppCompatActivity {
-    ListView lst;
     SinhVienAdapter adapter;
     public static final String TENFILE = "sinhvien.txt";
-    private ArrayList<SinhVien> list_ = new ArrayList<>();
+     ArrayList<SinhVien> list_ = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +45,7 @@ public class MainSinhVien extends AppCompatActivity {
         });
 
 
-        lst = findViewById(R.id.lstsv);
+        ListView lst = findViewById(R.id.lstsv);
         Button btnadd = findViewById(R.id.btnadd);
         try {
             if (Xfile.kiemtratontai(MainSinhVien.this, TENFILE)) {
@@ -75,7 +74,7 @@ public class MainSinhVien extends AppCompatActivity {
 
         adapter = new SinhVienAdapter(this, list_);
         lst.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
+         adapter.notifyDataSetChanged();
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

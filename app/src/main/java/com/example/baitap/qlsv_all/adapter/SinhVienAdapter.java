@@ -178,7 +178,6 @@ public class SinhVienAdapter extends RecyclerView.Adapter<SinhVienAdapter.ViewHo
         builder.setPositiveButton("Cập nhật", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // Show confirmation dialog
                 AlertDialog.Builder confirmBuilder = new AlertDialog.Builder(context);
                 confirmBuilder.setTitle("Xác nhận");
                 confirmBuilder.setMessage("Bạn có chắc chắn muốn cập nhật sinh viên này không?");
@@ -186,7 +185,6 @@ public class SinhVienAdapter extends RecyclerView.Adapter<SinhVienAdapter.ViewHo
                 confirmBuilder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        // Update sinh vien
                         String maSV = txtMaSVUpdate.getText().toString();
                         String hoTen = txtHoTenUpdate.getText().toString();
                         String ngaySinh = txtNgaySinhUpdate.getText().toString();

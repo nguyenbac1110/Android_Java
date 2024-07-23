@@ -14,12 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.baitap.R;
 
 public class lab2bai2hienthi extends AppCompatActivity {
-    private TextView tvMa;
-    private TextView tvTen;
-    private TextView tvGia;
-    private TextView tvSologan;
-    private TextView tvUnit;
-    private Button btnThoat;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +26,12 @@ public class lab2bai2hienthi extends AppCompatActivity {
             return insets;
         });
 
-        tvMa = findViewById(R.id.tvMa);
-        tvTen = findViewById(R.id.tvTen);
-        tvGia = findViewById(R.id.tvGia);
-        tvSologan = findViewById(R.id.tvSologan);
-        tvUnit = findViewById(R.id.tvUnit);
-        btnThoat = findViewById(R.id.btnThoat);
+        TextView tvMa = findViewById(R.id.tvMa);
+        TextView tvTen = findViewById(R.id.tvTen);
+        TextView tvGia = findViewById(R.id.tvGia);
+        TextView tvSologan = findViewById(R.id.tvSologan);
+        TextView tvUnit = findViewById(R.id.tvUnit);
+        Button btnThoat = findViewById(R.id.btnThoat);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             String ma = bundle.getString("ma");

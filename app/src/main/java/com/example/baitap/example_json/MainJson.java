@@ -22,17 +22,15 @@ import java.util.ArrayList;
 
 public class MainJson extends AppCompatActivity {
 
-    private ListView listView;
-    private Button btnShowData;
-    private GiaoVienAdapter adapter;
-    private ArrayList<GiaoVien> giaoVienList;
+     GiaoVienAdapter adapter;
+     ArrayList<GiaoVien> giaoVienList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_json);
-        listView = findViewById(R.id.listView);
-        btnShowData = findViewById(R.id.btnShowData);
+        ListView listView = findViewById(R.id.listView);
+        Button btnShowData = findViewById(R.id.btnShowData);
         giaoVienList = new ArrayList<>();
 
         adapter = new GiaoVienAdapter(this, giaoVienList);

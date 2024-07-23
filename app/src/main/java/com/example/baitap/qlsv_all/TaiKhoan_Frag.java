@@ -26,10 +26,10 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class TaiKhoan_Frag extends Fragment {
-    private RecyclerView recyclerView;
-    private TaiKhoanAdapter adapter;
-    private ArrayList<TaiKhoan> taiKhoanList;
-    private CustomDAO CustomDAO;
+     RecyclerView recyclerView;
+     TaiKhoanAdapter adapter;
+     ArrayList<TaiKhoan> taiKhoanList;
+     CustomDAO CustomDAO;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

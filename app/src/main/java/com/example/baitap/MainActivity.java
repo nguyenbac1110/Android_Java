@@ -27,20 +27,6 @@ import com.example.baitap.qlsv.MainSinhVien;
 import com.example.baitap.qlsv_all.MainSV;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnbai1_1;
-    private Button btnbai1_2;
-    private Button btnbai1_3;
-    private Button btnbai2_1;
-    private Button btnbai2_2;
-    private Button btnbai2_3;
-    private Button btnbai3_1;
-    private Button btnbai3_2;
-    private Button btnbai4;
-    private Button btnbaiqlsv;
-    private Button btnjson;
-    private Button btnsv;
-    private Button Nav;
-    private Button btnBottom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,20 +37,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnbai1_1 = findViewById(R.id.btnbai1_1);
-        btnbai1_2 = findViewById(R.id.btnbai1_2);
-        btnbai1_3 = findViewById(R.id.btnbai1_3);
-        btnbai2_1 = findViewById(R.id.btnbai2_1);
-        btnbai2_2 = findViewById(R.id.btnbai2_2);
-        btnbai2_3 = findViewById(R.id.btnbai2_3);
-        btnbai3_1 = findViewById(R.id.btnbai3_1);
-        btnbai3_2 = findViewById(R.id.btnbai3_2);
-        btnbai4 = findViewById(R.id.btnbai4);
-        btnbaiqlsv = findViewById(R.id.btnbaiqlsv);
-        btnjson = findViewById(R.id.btnjson);
-        btnsv = findViewById(R.id.btnsv);
-        Nav = findViewById(R.id.btnNav);
-        btnBottom = findViewById(R.id.btnBottom);
+        Button btnbai1_1 = findViewById(R.id.btnbai1_1);
+        Button btnbai1_2 = findViewById(R.id.btnbai1_2);
+        Button btnbai1_3 = findViewById(R.id.btnbai1_3);
+        Button btnbai2_1 = findViewById(R.id.btnbai2_1);
+        Button btnbai2_2 = findViewById(R.id.btnbai2_2);
+        Button btnbai2_3 = findViewById(R.id.btnbai2_3);
+        Button btnbai3_1 = findViewById(R.id.btnbai3_1);
+        Button btnbai3_2 = findViewById(R.id.btnbai3_2);
+        Button btnbai4 = findViewById(R.id.btnbai4);
+        Button btnbaiqlsv = findViewById(R.id.btnbaiqlsv);
+        Button  btnjson = findViewById(R.id.btnjson);
+        Button btnsv = findViewById(R.id.btnsv);
+        Button Nav = findViewById(R.id.btnNav);
+        Button btnBottom = findViewById(R.id.btnBottom);
         btnbai1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

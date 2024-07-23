@@ -22,7 +22,6 @@ public class CustomDAO {
         dbhelper = new DbHelper(context);
     }
 
-    // Select all SinhVien
     public ArrayList<SinhVien> selectAllSinhVien() {
         ArrayList<SinhVien> list = new ArrayList<>();
         String query = "SELECT * FROM SinhVien";
@@ -30,8 +29,6 @@ public class CustomDAO {
         try (SQLiteDatabase db = dbhelper.getReadableDatabase();
              Cursor cursor = db.rawQuery(query, null)) {
 
-            // Bật khóa ngoại
-            db.execSQL("PRAGMA foreign_keys=ON;");
 
             if (cursor.moveToFirst()) {
                 int maSVIndex = cursor.getColumnIndex("MaSV");
@@ -65,7 +62,6 @@ public class CustomDAO {
         return list;
     }
 
-    // Select all Lop
     public ArrayList<Lop> selectAllLop() {
         ArrayList<Lop> list = new ArrayList<>();
         SQLiteDatabase db = dbhelper.getReadableDatabase();
@@ -92,7 +88,6 @@ public class CustomDAO {
         return list;
     }
 
-    // Select all TaiKhoan
     public static ArrayList<TaiKhoan> selectAllTaiKhoan() {
         ArrayList<TaiKhoan> list = new ArrayList<>();
         SQLiteDatabase db = dbhelper.getReadableDatabase();
@@ -118,7 +113,6 @@ public class CustomDAO {
         return list;
     }
 
-    // Insert SinhVien
     public boolean insertSinhVien(SinhVien sv) {
         SQLiteDatabase db = dbhelper.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -133,28 +127,7 @@ public class CustomDAO {
         return (row > 0);
     }
 
-    // Insert Lop
-    public boolean insertLop(Lop lop) {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("TenLop", lop.getTenLop());
-        values.put("DayNha", lop.getDayNha());
-        values.put("KhuVuc", lop.getKhuVuc());
-        long row = db.insert("Lop", null, values);
-        return (row > 0);
-    }
 
-    // Insert TaiKhoan
-    public boolean insertTaiKhoan(TaiKhoan tk) {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("TaiKhoan", tk.getTaiKhoan());
-        values.put("MatKhau", tk.getMatKhau());
-        long row = db.insert("TaiKhoan", null, values);
-        return (row > 0);
-    }
-
-    // Update SinhVien
     public boolean updateSinhVien(SinhVien sv) {
         SQLiteDatabase db = dbhelper.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -169,45 +142,10 @@ public class CustomDAO {
         return (row > 0);
     }
 
-    // Update Lop
-    public boolean updateLop(Lop lop) {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("TenLop", lop.getTenLop());
-        values.put("DayNha", lop.getDayNha());
-        values.put("KhuVuc", lop.getKhuVuc());
-        long row = db.update("Lop", values, "TenLop=?", new String[]{String.valueOf(lop.getTenLop())});
-        return (row > 0);
-    }
-
-    // Update TaiKhoan
-    public boolean updateTaiKhoan(TaiKhoan tk) {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("TaiKhoan", tk.getTaiKhoan());
-        values.put("MatKhau", tk.getMatKhau());
-        long row = db.update("TaiKhoan", values, "TaiKhoan=?", new String[]{String.valueOf(tk.getTaiKhoan())});
-        return (row > 0);
-    }
-
-    // Delete SinhVien
     public boolean deleteSinhVien(String MaSV) {
         SQLiteDatabase db = dbhelper.getWritableDatabase();
         long row = db.delete("SinhVien", "MaSV=?", new String[]{MaSV});
         return (row > 0);
     }
 
-    // Delete Lop
-    public boolean deleteLop(String TenLop) {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
-        long row = db.delete("Lop", "TenLop=?", new String[]{TenLop});
-        return (row > 0);
-    }
-
-    // Delete TaiKhoan
-    public boolean deleteTaiKhoan(String TaiKhoan) {
-        SQLiteDatabase db = dbhelper.getWritableDatabase();
-        long row = db.delete("TaiKhoan", "TaiKhoan=?", new String[]{TaiKhoan});
-        return (row > 0);
-    }
 }

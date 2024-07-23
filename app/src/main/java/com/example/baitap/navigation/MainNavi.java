@@ -19,9 +19,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 public class MainNavi extends AppCompatActivity {
-    private Toolbar toolbar;
-    private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,11 +29,11 @@ public class MainNavi extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        drawerLayout = findViewById(R.id.main);
-        navigationView = findViewById(R.id.navigationView);
+        DrawerLayout drawerLayout = findViewById(R.id.main);
+        NavigationView navigationView = findViewById(R.id.navigationView);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 MainNavi.this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

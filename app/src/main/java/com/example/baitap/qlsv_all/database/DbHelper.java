@@ -13,7 +13,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String TABLE_TAIKHOAN = "TaiKhoan";
 
     public DbHelper (Context context){
-        super(context,DB_NAME,null,5);
+        super(context,DB_NAME,null,1);
     }
 
     @Override
@@ -39,25 +39,25 @@ public class DbHelper extends SQLiteOpenHelper {
                 "MatKhau text)";
         sqLiteDatabase.execSQL(tb_taikhoan);
 
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('Lop 1', 'Day Nha 1', 'Khu Vuc 1')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('Lop 2', 'Day Nha 2', 'Khu Vuc 2')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('Lop 3', 'Day Nha 3', 'Khu Vuc 3')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('Lop 4', 'Day Nha 4', 'Khu Vuc 4')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('Lop 5', 'Day Nha 5', 'Khu Vuc 5')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('DHTI15A1HN', 'HA8', 'Lĩnh Nam')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('DHTI15A2HN', 'HA8', 'Lnh Nam')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('DHTI15A3HN', 'HA9', 'Hoàng Mai')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('DHTI15A4HN', 'HA10', 'Hoàng Mai')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_LOP + " VALUES ('DHTI15A5HN', 'HA11', 'Lnh Nam')");
 
         // Chèn dữ liệu vào bảng SinhVien
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV1', 'Ho Ten 1', 'Ngay Sinh 1', 'Ho Khau 1', 'Lop 1', 'Khoa Hoc 1', 'Khoa 1')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV2', 'Ho Ten 2', 'Ngay Sinh 2', 'Ho Khau 2', 'Lop 2', 'Khoa Hoc 2', 'Khoa 2')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV3', 'Ho Ten 3', 'Ngay Sinh 3', 'Ho Khau 3', 'Lop 3', 'Khoa Hoc 3', 'Khoa 3')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV4', 'Ho Ten 4', 'Ngay Sinh 4', 'Ho Khau 4', 'Lop 4', 'Khoa Hoc 4', 'Khoa 4')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV5', 'Ho Ten 5', 'Ngay Sinh 5', 'Ho Khau 5', 'Lop 5', 'Khoa Hoc 5', 'Khoa 5')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV1', 'Nguyen Van A', '12/6/2003', 'Nam Định', 'Lop 1', 'IT', '2016')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV2', 'Nguyen Van B', '13/8/2003', 'Lạng Sơn', 'Lop 2', 'BA', '2018')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV3', 'Nguyen Thi C', '15/8/2004', 'Lào Cai', 'Lop 3', 'TMDT', '2020')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV4', 'Nguyen Thi D', '19/8/2002', 'Hưng Yên', 'Lop 4', 'Dancer', '2020')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_SINHVIEN + " VALUES ('SV5', 'Nguyen Van E', '20/8/2006', 'Bắc Giang', 'Lop 5', 'MMT', '2021')");
 
         // Chèn dữ liệu vào bảng TaiKhoan
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('TK1', 'MK1')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('TK2', 'MK2')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('TK3', 'MK3')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('TK4', 'MK4')");
-        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('TK5', 'MK5')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('admin1', '1128')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('admin2', '1128')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('admin3', '1128')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('admin4', '1128')");
+        sqLiteDatabase.execSQL("INSERT INTO " + TABLE_TAIKHOAN + " VALUES ('admin5', '1128')");
     }
 
     @Override

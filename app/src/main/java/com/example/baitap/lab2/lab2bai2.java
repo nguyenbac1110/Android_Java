@@ -15,11 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.baitap.R;
 
 public class lab2bai2 extends AppCompatActivity {
-    private EditText txtId;
-    private EditText txtTen;
-    private EditText txtGia;
-    private EditText txtSologan;
-    private EditText txtdonvi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +30,11 @@ public class lab2bai2 extends AppCompatActivity {
         btndang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtId = findViewById(R.id.edtMa);
-                txtTen = findViewById(R.id.edtTen);
-                txtGia = findViewById(R.id.edtGia);
-                txtSologan = findViewById(R.id.edtSlogan);
-                txtdonvi = findViewById(R.id.unit);
+                EditText txtId = findViewById(R.id.edtMa);
+                EditText txtTen = findViewById(R.id.edtTen);
+                EditText txtGia = findViewById(R.id.edtGia);
+                EditText txtSologan = findViewById(R.id.edtSlogan);
+                EditText txtdonvi = findViewById(R.id.unit);
                 String ma = txtId.getText().toString().trim();
                 String ten = txtTen.getText().toString().trim();
                 String gia = txtGia.getText().toString().trim();

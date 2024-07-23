@@ -15,18 +15,16 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainSV extends AppCompatActivity {
-    TabLayout tabLayout;
-    ViewPager2 viewPager;
-    ViewPageAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_sv);
 
-        viewPager = findViewById(R.id.viewpage);
-        tabLayout = findViewById(R.id.tablayout);
-        adapter = new ViewPageAdapter(this);
+        ViewPager2 viewPager = findViewById(R.id.viewpage);
+        TabLayout tabLayout = findViewById(R.id.tablayout);
+        ViewPageAdapter adapter = new ViewPageAdapter(this);
         viewPager.setAdapter(adapter);
 
         new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {

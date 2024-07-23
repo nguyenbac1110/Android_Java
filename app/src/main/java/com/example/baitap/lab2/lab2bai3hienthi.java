@@ -11,8 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.baitap.R;
 
-public class lab2bai3hienthi extends AppCompatActivity {
-    private TextView tvMaGV;
+public class lab2bai3hienthi extends AppCompatActivity { private TextView tvMaGV;
     private TextView tvHoTen;
     private TextView tvGioiTinh;
     private TextView tvSoThich;
@@ -26,10 +25,10 @@ public class lab2bai3hienthi extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        tvMaGV = findViewById(R.id.tvMaGV);
-        tvHoTen = findViewById(R.id.tvHoTen);
-        tvGioiTinh = findViewById(R.id.tvGioiTinh);
-        tvSoThich = findViewById(R.id.tvSoThich);
+        TextView tvMaGV = findViewById(R.id.tvMaGV);
+        TextView tvHoTen = findViewById(R.id.tvHoTen);
+        TextView tvGioiTinh = findViewById(R.id.tvGioiTinh);
+        TextView tvSoThich = findViewById(R.id.tvSoThich);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             String maGV = bundle.getString("maGV");

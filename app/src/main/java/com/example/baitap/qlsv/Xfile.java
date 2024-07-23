@@ -14,7 +14,7 @@ public class Xfile {
         try {
             FileOutputStream fos=context.openFileOutput(path,Context.MODE_PRIVATE);
             ObjectOutputStream oos=new ObjectOutputStream(fos);
-            oos.writeObject(object);//thực hiện ghi đối tượng
+            oos.writeObject(object);
             oos.close();
             fos.close();
         }
@@ -29,7 +29,7 @@ public class Xfile {
         try{
             FileInputStream fis=context.openFileInput(path);
             ObjectInputStream ois=new ObjectInputStream(fis);
-            list=(ArrayList) ois.readObject();//đọc đối tượng
+            list=(ArrayList) ois.readObject();
             ois.close();
             fis.close();
         }

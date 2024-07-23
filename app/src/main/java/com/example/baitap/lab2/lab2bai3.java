@@ -42,24 +42,23 @@ public class lab2bai3 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btnHienThi = findViewById(R.id.btnHienThi);
-        btnThoat = findViewById(R.id.btnThoat);
+        Button btnHienThi = findViewById(R.id.btnHienThi);
+        Button btnThoat = findViewById(R.id.btnThoat);
         btnHienThi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                edtMaGV = findViewById(R.id.edtMaGV);
-                edtHoTen = findViewById(R.id.edtHoTen);
-                rgGioiTinh = findViewById(R.id.rgGioiTinh);
-                rbNam = findViewById(R.id.rbNam);
-                rbNu = findViewById(R.id.rbNu);
-                btnHienThi = findViewById(R.id.btnHienThi);
-                btnThoat = findViewById(R.id.btnThoat);
-                cbXemPhim = findViewById(R.id.cbXemPhim);
-                cbNgheNhac = findViewById(R.id.cbNgheNhac);
-                cbCaHat = findViewById(R.id.cbCaHat);
-                cbDocSach = findViewById(R.id.cbDocSach);
-                cbDuLich = findViewById(R.id.cbDuLich);
-                cbTheDuc = findViewById(R.id.cbTheDuc);
+                EditText edtMaGV = findViewById(R.id.edtMaGV);
+                EditText edtHoTen = findViewById(R.id.edtHoTen);
+                RadioGroup rgGioiTinh = findViewById(R.id.rgGioiTinh);
+                RadioButton rbNam = findViewById(R.id.rbNam);
+                RadioButton rbNu = findViewById(R.id.rbNu);
+
+                CheckBox cbXemPhim = findViewById(R.id.cbXemPhim);
+                CheckBox cbNgheNhac = findViewById(R.id.cbNgheNhac);
+                CheckBox cbCaHat = findViewById(R.id.cbCaHat);
+                CheckBox cbDocSach = findViewById(R.id.cbDocSach);
+                CheckBox cbDuLich = findViewById(R.id.cbDuLich);
+                CheckBox cbTheDuc = findViewById(R.id.cbTheDuc);
                 String maGV = edtMaGV.getText().toString().trim();
                 String hoTen = edtHoTen.getText().toString().trim();
                 String gioiTinh = rbNam.isChecked() ? "Nam" : "Nữ";
